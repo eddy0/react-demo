@@ -1,0 +1,14 @@
+.container>.logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.navbar-toggler {
+  &:focus {
+    outline: 0;
+  }
+  &:hover {
+    background-color: rgba(black, 0.1);
+  }
+}

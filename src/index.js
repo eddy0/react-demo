@@ -1,10 +1,22 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Layout from './layout'
+import {BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import Layout from './layout/layout'
 import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './layout.scss'
+import { HashRouter } from 'react-router-dom';
 
+
+class App extends React.Component {
+    render() {
+
+        return (
+            <HashRouter>
+                < Layout />
+            </HashRouter>
+        )
+    }
+}
 
 const app = document.getElementById('root')
-ReactDOM.render(<Layout />, app)
+ReactDOM.render( <App/>, app)
+
